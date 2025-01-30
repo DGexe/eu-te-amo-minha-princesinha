@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Meu Amor</title>
+    <style>
+        body {
+            background-color: #ebf3ff;
+            text-align: center;
+            font-family: Georgia, serif;
+        }
+        h1 {
+            color: #3c44b8;
+            margin-top: 80px;
+        }
+         .random-image {
+            width: 300px;  /* Definindo a largura */
+            height: auto;  /* Mantendo a proporção */
+            margin-top: 15px;  /* Espaço entre o texto e a imagem */
+            border-radius: 10px; /* Cantos arredondados (opcional) */
+            box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.2); /* Sombra suave */
+
+         }
+         .image-caption {
+            font-size: 18px; /* Tamanho da fonte */
+            color: #000000; /* Cor do texto */
+            margin-top: 10px; /* Espaço entre a imagem e o texto */
+        }
+        .flower {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-image: url('https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xwMWNyNnk1NGx3aHZyZnd3YWZuZ3A2aG1zZ3ByZ3dzOHNkZDQwMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/U2ULLl3Um7OHm9V6Q5/giphy.gif');
+            background-size: cover;
+            animation: bloom 5s linear infinite;
+        }
+        .texto1 {
+            font-size: 15px;
+            color:#000000;
+            margin-left: 75%;
+            margin-top: 10%;
+        }
+        .texto2 {
+            font-size: 15px;
+            color:#000000;
+            margin-left: 75%;
+            margin-bottom: 0%;
+        }
+        @keyframes bloom {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Para a minha princesinha 💙</h1>
+    <p>Eu te amo muito amor!</p>
+
+    <img src="site-image.jpg" alt="A gnt" class="random-image">
+
+    <p class="image-caption"> Eu amo dividir todos os dias ao seu lado meu amor!, você me faz o homem mais feliz do universo </p>
+
+    <script>
+          function createFlower() {
+        const flower = document.createElement('div');
+        flower.classList.add('flower');
+        document.body.appendChild(flower);
+
+        let x = (window.innerWidth / 2) - 100; 
+        let y = window.innerHeight - 200; 
+
+        flower.style.left = `${x}px`;
+        flower.style.top = `${y}px`;
+    }
+
+    createFlower();
+    </script>
+        <p class="texto1">De: Diogo</p>
+    <p class="texto2">Para: Manu</p>
+</body>
+
+</html>
